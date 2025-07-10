@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Resonance</title>
+  <style>
+    body {
+      background-color: #121212;
+      color: #f0f0f0;
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    .container {
+      width: 90%;
+      max-width: 800px;
+      text-align: center;
+    }
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      margin: 20px 0;
+    }
+    h1 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+    p {
+      margin-bottom: 20px;
+      font-size: 1.1em;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1em;
+    }
+    button {
+      background-color: #1e88e5;
+      color: white;
+      padding: 12px 24px;
+      font-size: 1em;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #1565c0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>What do you see?</h1>
+    <p>Describe what's meaningful to you in this image</p>
+    <img src="image1.jpg" alt="Reflective Symbolic Image" />
+    <form action="mailto:thesignalgate@proton.me" method="POST" enctype="text/plain">
+      <textarea name="reflection" placeholder="Enter your reflection..." rows="6" required></textarea>
+      <input type="email" name="email" placeholder="Email address (optional)" />
+      <button type="submit">Send</button>
+    </form>
+  </div>
+</body>
+</html>
